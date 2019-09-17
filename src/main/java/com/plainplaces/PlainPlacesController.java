@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  *Handle the /start endpoint
  *@return
  */
+
 @Controller
 public class PlainPlacesController {
 
@@ -17,6 +18,11 @@ public class PlainPlacesController {
 		
 		return "start";
 	}
+	
+	/**
+	 * Handle the / endpoint
+	 *@return
+	 */
 	@RequestMapping("/index")
 	public String index() {
 		
